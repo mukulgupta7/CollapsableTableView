@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UITableView *tablesearch;
+@property (nonatomic)NSArray * array1;
+@property (nonatomic)NSArray *array2;
+@property (nonatomic ) NSArray * array3;
 
 @end
 
